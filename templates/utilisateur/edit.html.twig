@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Utilisateur{% endblock %}
+
+{% block body %}
+    <h1 style="color: #7b7b9c;font-size:30px;text-align: center;margin-top: revert;margin-bottom: revert;">Edit Utilisateur</h1>
+
+    {{ include('utilisateur/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('utilisateur_index') }}" class="btn btn-secondary" style="margin-top:10px;margin-left:5px">back to list</a>
+   <span class="btn btn-danger" style="text-align: center;height: 40px;margin-top: 9px;"> {{ include('utilisateur/_delete_form.html.twig') }}</span>
+{% endblock %}
